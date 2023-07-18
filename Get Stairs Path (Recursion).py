@@ -2,8 +2,8 @@ available_jump_lengths = [1,5,2,3,4]
 def get_paths(n):
     if n == 0:
         return [""]
-    if n < 0:
-        return ""
+    elif n < 0:
+        return []
         
     total_paths = []
     for jump in available_jump_lengths:
